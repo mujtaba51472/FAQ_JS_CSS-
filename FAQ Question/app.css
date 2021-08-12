@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;500&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(214, 206, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Mulish;
+}
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  width: 600px;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+.faq {
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  height: 80px;
+  margin: 10px 0px;
+  position: relative;
+  border: 1px solid gray;
+  background-color: transparent;
+  transition: 0.3s ease-in;
+}
+.faq.active {
+  background-color: white;
+}
+
+button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.faq-text {
+  opacity: 0;
+  transition: 0.3s ease-in;
+}
+.faq.active .faq-text {
+  opacity: 1;
+  margin-top: 8px;
+  transition: 0.3s ease-in;
+}
+button .fa-times {
+  display: none;
+  margin-left: 10px;
+}
+.faq.active button .fa-times {
+  display: block;
+  background-color: rgb(171, 164, 164);
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+}
+.faq.active button .fa-angle-down {
+  display: none;
+  margin-left: 5px;
+}
+button .fa-angle-down {
+  font-size: 20px;
+}
